@@ -48,17 +48,17 @@ class Fan {
 }
 public class Main {
   public static void main(String[] args) {
-      Fan fan1 = new Fan();
-      fan1.setSpeed(Fan.FAST);
-      fan1.setRadius(10);
-      fan1.setColor("yellow");
-      fan1.setOn(true);
-      Fan fan2 = new Fan();
-      fan2.setSpeed(Fan.MEDIUM);
-      fan2.setRadius(5);
-      fan2.setColor("blue");
-      // Fan2 remains off
-      System.out.println(fan1.toString());
-      System.out.println(fan2.toString());
+      Fan fan1 = new Fan(); // create a new Fan object
+      fan1.setSpeed(Fan.FAST); // set the fan speed to FAST
+      fan1.setRadius(10); // set the fan radius to 10
+      fan1.setColor("yellow"); // set the fan color to yellow
+      fan1.setOn(true); // turn the fan on
+      Fan fan2 = new Fan(); // create a new Fan object
+      fan2.setSpeed(Fan.MEDIUM); // set fan2 speed to MEDIUM
+      fan2.setRadius(5); // set fan2 radius to 5
+      fan2.setColor("blue"); // set fan2 color to blue
+        // Fan2 remains off because the default value of on is false
+      System.out.println(fan1.toString()); // print fan1 details to the console
+      System.out.println(fan2.toString()); // print fan2 details to the console
   }
 }
