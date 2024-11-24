@@ -1,46 +1,47 @@
 class Fan {
-  public static final int SLOW = 1;
-  public static final int MEDIUM = 2;
-  public static final int FAST = 3;
-  private int speed;
-  private boolean on;
-  private double radius;
-  private String color;
-  public Fan() {
-      speed = SLOW;
-      on = false;
-      radius = 5;
-      color = "blue";
+   public static final int SLOW = 1; // declare a constant variable SLOW with value 1
+  public static final int MEDIUM = 2; // declare a constant variable MEDIUM with value 2
+  public static final int FAST = 3; // declare a constant variable FAST with value 3
+  private int speed; // declare a private integer variable speed
+  private boolean on; // declare a private boolean variable on
+  private double radius; // declare a private double variable radius
+  private String color; // declare a private string variable color
+
+  public Fan() { // constructor Fan
+      speed = SLOW; // set speed to SLOW
+      on = false; // set on to false
+      radius = 5; // set radius to 5
+      color = "blue"; // set color to blue
   }
-  public int getSpeed() {
-      return speed;
+  public int getSpeed() { // getter method for speed variable
+      return speed; // return the value speed
   }
-  public void setSpeed(int speed) {
-      this.speed = speed;
+  public void setSpeed(int speed) { // setter method for speed variable
+      this.speed = speed; // set the value of speed to the value passed as an argument
   }
-  public boolean isOn() {
-      return on;
+  public boolean isOn() { // getter method for on variable
+      return on; // return the value on
   }
-  public void setOn(boolean on) {
-      this.on = on;
+  public void setOn(boolean on) { // setter method for on variable
+      this.on = on; // set the value of on to the value passed as an argument
   }
-  public double getRadius() {
-      return radius;
+  public double getRadius() { // getter method for radius variable
+      return radius; // return the value radius
   }
-  public void setRadius(double radius) {
-      this.radius = radius;
+  public void setRadius(double radius) { // setter method for radius variable
+      this.radius = radius; // set the value of radius to the value passed as an argument
   }
-  public String getColor() {
-      return color;
+  public String getColor() { // getter method for color variable
+      return color; // return the value color
   }
-  public void setColor(String color) {
-      this.color = color;
+  public void setColor(String color) { // setter method for color variable
+      this.color = color; // set the value of color to the value passed as an argument
   }
-  @Override
-  public String toString() {
-      if (on) {
+  @Override // override the toString method
+  public String toString() { // toString method to return the fan details
+      if (on) { // if the fan is on return the fan details with speed, color and radius
           return "Fan is on with speed " + speed + ", color " + color + " and radius " + radius;
-      } else {
+      } else { // if the fan is off return the fan details with color and radius
           return "Fan is off with color " + color + " and radius " + radius;
       }
   }
